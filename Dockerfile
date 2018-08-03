@@ -1,6 +1,6 @@
 FROM ubuntu:14.04
 
-MANTAINER joaniznardo (github)
+MAINTAINER joaniznardo (github)
 RUN apt-get update && apt-get install -y openssh-server sudo supervisor
 RUN useradd -m ubuntu && echo "ubuntu:ubuntu" | chpasswd && adduser ubuntu sudo
 
